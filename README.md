@@ -1,10 +1,29 @@
 # Deploy Reactjs app to github page
 
 ## How to use it in your repo
+
+- Create a new repo using your github account
+- Create a folder in your computer
+```
+mkdir yourReactApp
+cd yourReactApp
+```
+Once in your folder:
+```
+echo "# touchbar__trupiano" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/alvarezmauro/touchbar__trupiano.git
+git push -u origin master
+```
+
+After that, just download the files of this repo into your folder and execute
+
 ```
 npm install
 ```
-Then go to the **package.json** and modify the home value with https://[your-user-name].github.io/[your-repo-name]/
+Now you need to go to the **package.json** file and modify the home value with https://[your-user-name].github.io/[your-repo-name]/
 ```
 {
     "name": "react__gh-pages",

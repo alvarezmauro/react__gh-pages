@@ -1,4 +1,4 @@
-# Deploy Reactjs app to github page
+# Deploy React App to github page
 
 ## How to use it
 
@@ -47,19 +47,19 @@ Now you need to go to the **package.json** file and modify the home value with *
 }
 ```
 
-Now you can deploy your reactjs app to your gh-page with
+Now you can deploy your React app to your gh-page with
 ```
 npm run deploy
 ```
 
-## Step by step how I made this project
+## Step-by-step how I made this project
 
-**1 -** install **create-react-app** and created a new Reactjs app
+**1 -** install **create-react-app** and created a new React app
 ```
 # install create-react-app
 npm install -g create-react-app
 
-# create a reactjs app
+# create a React App
 create-react-app website
 
 #change directory

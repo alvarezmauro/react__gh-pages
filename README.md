@@ -1,3 +1,47 @@
+# Deploy Reactjs app to github page
+
+## How to use it in your repo
+```
+npm install
+```
+Then go to the **package.json** and modify the home value with https://[your-user-name].github.io/[your-repo-name]/
+```
+{
+    "name": "react__gh-pages",
+    "homepage": "https://alvarezmauro.github.io/react__gh-pages",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "gh-pages": "^1.1.0",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-scripts": "1.1.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "eject": "react-scripts eject"
+    }
+}
+```
+
+Now you can deploy your reactjs app to your gh-page with
+```
+npm run deploy
+```
+
+### Bootstrap React Application
+```
+npm install -g create-react-app
+create-react-app website
+cd website
+npm start
+```
+
+## Create React App documentation
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

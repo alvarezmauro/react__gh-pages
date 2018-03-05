@@ -23,7 +23,7 @@ After that, just download the files of this repo into your folder and execute
 ```
 npm install
 ```
-Now you need to go to the **package.json** file and modify the home value with https://[your-user-name].github.io/[your-repo-name]/
+Now you need to go to the **package.json** file and modify the home value with **https://[your-user-name].github.io/[your-repo-name]/**
 ```
 {
     "name": "react__gh-pages",
@@ -54,7 +54,7 @@ npm run deploy
 
 ## Step by step how I made this project
 
-1- install **create-react-app** and created a new Reactjs app
+**1 -** install **create-react-app** and created a new Reactjs app
 ```
 # install create-react-app
 npm install -g create-react-app
@@ -69,8 +69,8 @@ $ cd website
 $ npm start
 ```
 
-2 - Create a new repo in GitHub
-3 - Commit code to your repo
+**2 -** Create a new repo in GitHub
+**3 -** Commit code to your repo
 ```
 #create a new git repository
 $ git init
@@ -87,12 +87,12 @@ $ git remote add origin https://github.com/alvarezmauro/react__gh-pages.git
 #push local repository to remote repository on GitHub
 $ git push origin master
 ```
-4 - Install **gh-pages**
+**4 -** Install **gh-pages**
 ```
 #install gh-pages package
 $ npm install --save gh-pages
 ```
-5 - Modify package.json file and add the following settings:
+**5 -** Modify package.json file and add the following settings:
 **homepage** : your repo GitHub page url (https://[your-user-name].github.io/[your-repo-name]/)
 **predeploy** : specifies the command to build before deployment
 **deploy** : specifies which branch and directory to deploy
@@ -119,11 +119,13 @@ $ npm install --save gh-pages
     }
 }
 ```
-6 - Deploy app
+**6 -** Deploy the app
 ```
 #deploy application
 $ npm run deploy
 ```
+
+
 
 # Create React App documentation
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

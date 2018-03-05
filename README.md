@@ -1,6 +1,6 @@
 # Deploy Reactjs app to github page
 
-## How to use it in your repo
+## How to use it
 
 - Create a new repo using your github account
 - Create a folder in your computer
@@ -52,15 +52,80 @@ Now you can deploy your reactjs app to your gh-page with
 npm run deploy
 ```
 
-### Bootstrap React Application
+## Step by step how I made this project
+
+1- install **create-react-app** and created a new Reactjs app
 ```
+# install create-react-app
 npm install -g create-react-app
+
+# create a reactjs app
 create-react-app website
-cd website
-npm start
+
+#change directory
+$ cd website
+
+#run application in development environment
+$ npm start
 ```
 
-## Create React App documentation
+2 - Create a new repo in GitHub
+3 - Commit code to your repo
+```
+#create a new git repository
+$ git init
+
+#add all changed file paths to staged changes
+$ git add .
+
+#commit all staged changes
+$ git commit -m 'initial commit'
+
+#add remote repository (replace the repo url for your repo url)
+$ git remote add origin https://github.com/alvarezmauro/react__gh-pages.git 
+
+#push local repository to remote repository on GitHub
+$ git push origin master
+```
+4 - Install **gh-pages**
+```
+#install gh-pages package
+$ npm install --save gh-pages
+```
+5 - Modify package.json file and add the following settings:
+**homepage** : your repo GitHub page url (https://[your-user-name].github.io/[your-repo-name]/)
+**predeploy** : specifies the command to build before deployment
+**deploy** : specifies which branch and directory to deploy
+
+```
+{
+    "name": "react__gh-pages",
+    "homepage": "https://alvarezmauro.github.io/react__gh-pages",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "gh-pages": "^1.1.0",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-scripts": "1.1.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "eject": "react-scripts eject"
+    }
+}
+```
+6 - Deploy app
+```
+#deploy application
+$ npm run deploy
+```
+
+# Create React App documentation
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

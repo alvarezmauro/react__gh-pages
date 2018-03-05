@@ -8,7 +8,7 @@
 mkdir yourReactApp
 cd yourReactApp
 ```
-Once in your folder:
+- Once in your folder:
 ```
 echo "# touchbar__trupiano" >> README.md
 git init
@@ -18,12 +18,12 @@ git remote add origin https://github.com/alvarezmauro/touchbar__trupiano.git
 git push -u origin master
 ```
 
-After that, just download the files of this repo into your folder and execute
+- After that, just download the files of this repo into your folder and execute
 
 ```
 npm install
 ```
-Now you need to go to the **package.json** file and modify the home value with **https://[your-user-name].github.io/[your-repo-name]/**
+- Next, you need to go to the **package.json** file and modify the home value with **https://[your-user-name].github.io/[your-repo-name]/**
 ```
 {
     "name": "react__gh-pages",
@@ -47,7 +47,7 @@ Now you need to go to the **package.json** file and modify the home value with *
 }
 ```
 
-Now you can deploy your React app to your gh-page with
+- Now you can deploy your React app to your gh-page with
 ```
 npm run deploy
 ```

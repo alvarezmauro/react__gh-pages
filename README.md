@@ -1,8 +1,8 @@
-# Deploy React App to github page
+# Deploy React App to GitHub page
 
 ## How to use it
 
-- Create a new repo using your github account
+- Create a new repo using your GitHub account
 - Create a folder in your computer
 ```
 mkdir yourReactApp
